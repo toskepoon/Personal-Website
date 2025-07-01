@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azat Ruslan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1 id="name">Azat Ruslan</h1>
+    <p id="subtitle" class="subtitle">This is website about me, Azat Ruslan(uly)</p>
+  </header>
+
+  <div class="language-switcher">
+    <label for="lang-select" id="lang-label">Language:</label>
+    <select id="lang-select" aria-label="Language selector">
+      <option value="en" selected>English</option>
+      <option value="mn">Монгол (Mongolian)</option>
+      <option value="kk">Қазақ (Kazakh)</option>
+    </select>
+  </div>
+
+  <nav class="tab-nav" role="tablist">
+    <button class="tab-button active" data-tab="intro" role="tab" aria-selected="true" aria-controls="intro" id="tab-intro">Introduction</button>
+    <button class="tab-button" data-tab="coding" role="tab" aria-selected="false" aria-controls="coding" id="tab-coding">Coding</button>
+    <button class="tab-button" data-tab="electronics" role="tab" aria-selected="false" aria-controls="electronics" id="tab-electronics">Electronics / Tinkercad</button>
+    <button class="tab-button" data-tab="selfstudy" role="tab" aria-selected="false" aria-controls="selfstudy" id="tab-selfstudy">Self-Studying</button>
+    <button class="tab-button" data-tab="work" role="tab" aria-selected="false" aria-controls="work" id="tab-work">Work</button>
+    <button class="tab-button" data-tab="club" role="tab" aria-selected="false" aria-controls="club" id="tab-club">Club</button>
+  </nav>
+
+  <main>
+    <section id="intro" class="tab-content active" role="tabpanel" aria-labelledby="tab-intro">
+      <h2 data-key="intro-title">Introduction</h2>
+      <p data-key="intro-text">Hello! I'm Azat Ruslan, a recent ELD student at high school. I am passionate about programming, data science, electronics, and continuous self-learning. I am majoring in Electrical Engineering with the concentration on Embedded and Control Systems.</p>
+    </section>
+
+    <section id="coding" class="tab-content" role="tabpanel" aria-labelledby="tab-coding">
+      <h2 data-key="coding-title">Coding Accomplishments</h2>
+      <ul>
+        <li data-key="coding-item1">Completed Python projects including a calculator and a web scraper</li>
+        <li data-key="coding-item2">Did 20+ problems on the Leetcode by Python and C++</li>
+        <li data-key="coding-item3">This website. This website is about me.</li>
+      </ul>
+    </section>
+
+    <section id="electronics" class="tab-content" role="tabpanel" aria-labelledby="tab-electronics">
+      <h2 data-key="electronics-title">Electronics / Tinkercad</h2>
+      <ul>
+        <li data-key="electronics-item1"><strong>Since my parents cannot afford expensive Arduino kits, I mostly do my Arduino kits on Tinkercad</strong></li>
+        <li data-key="electronics-item2">Built basic Arduino projects with LCD and Digital Thermometer on Tinkercad.</li>
+        <li data-key="electronics-item3">Built bluetooth controlled car on my Tinkercad.</li>
+      </ul>
+    </section>
+
+    <section id="selfstudy" class="tab-content" role="tabpanel" aria-labelledby="tab-selfstudy">
+      <h2 data-key="selfstudy-title">Self-Studying</h2>
+      <ul>
+        <li data-key="selfstudy-item1">I self studied C++, C#, Python, Kotlin, and Javascript. To anyone who is wondering about how I built this website without any intermediate knowledge about HTML and CSS, my friends contributed to website for frontend.</li>
+        <li data-key="selfstudy-item2">I self studied Calculus 1 through Calculus 3. Also, I am also studying Physics(Electromagnetism to be specifically).</li>
+        <li data-key="selfstudy-item3">Practiced coding challenges regularly</li>
+        <li data-key="selfstudy-item4">I am currently self studying Machine Learning and it's algorithms.</li>
+      </ul>
+    </section>
+
+    <section id="work" class="tab-content" role="tabpanel" aria-labelledby="tab-work">
+      <h2 data-key="work-title">Work Experience</h2>
+      <ul>
+        <li data-key="work-item1">I just do some DoorDash with my mom.</li>
+      </ul>
+    </section>
+
+    <section id="club" class="tab-content" role="tabpanel" aria-labelledby="tab-club">
+      <h2 data-key="club-title">Club Activities</h2>
+      <ul>
+        <li data-key="club-item1">Member of Robotics Club. Leader in my electronics club.</li>
+        <li data-key="club-item2">Participated in coding competitions and hackathons</li>
+        <li data-key="club-item3">Founded a TSA club at my high school.</li>
+        <li data-key="club-item4">Founded a interest club called "Electric and Electronics Club", where I teach freshman about arduinos and circuitry in general. </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Azat Ruslan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
